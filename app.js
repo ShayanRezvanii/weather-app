@@ -19,7 +19,7 @@ app.post('/' , (req ,res) =>{
             const weatherData = JSON.parse(data);
             const temp = weatherData.main.temp;
             const discription = weatherData.weather[0].description;
-            res.write("<h1>the Temperature in " + query + ' sis' + temp + " degree celcius</h1>")
+            res.write("<h1>the Temperature in " + query + ' is' + temp + " degree celcius</h1>")
             res.write('<p>the conditon of discription is ' + discription + '<p>')
         })
         
